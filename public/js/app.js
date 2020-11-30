@@ -2281,6 +2281,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.loadSliders(); // setInterval(() => this.loadSliders(), 1500);
@@ -40228,7 +40232,7 @@ var staticRenderFns = [
     return _c(
       "a",
       {
-        staticClass: " dropdown-toggle",
+        staticClass: "dropdown-toggle",
         attrs: {
           type: "button",
           id: "dropdownMenuButton",
@@ -40868,7 +40872,28 @@ var render = function() {
                       ])
                     : _vm._e(),
                   _vm._v(" "),
-                  slider.category == 1 ? _c("div") : _vm._e()
+                  slider.category == 1
+                    ? _c("div", [
+                        _c("a", [
+                          _c("i", {
+                            staticClass: "fas fa-folder shadoww",
+                            staticStyle: { "font-size": "100px" },
+                            style: " color:" + slider.color
+                          }),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c(
+                            "p",
+                            {
+                              staticStyle: { "font-size": "16px" },
+                              style: " color:" + slider.color
+                            },
+                            [_vm._v(_vm._s(slider.path))]
+                          )
+                        ])
+                      ])
+                    : _vm._e()
                 ]
               )
             }),
@@ -40885,7 +40910,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h4", { staticClass: "card-title" }, [_vm._v("Gallery")])
+      _c("h4", { staticClass: "card-title" }, [
+        _c("span", { staticStyle: { color: "red" } }, [_vm._v("Folder name")])
+      ])
     ])
   },
   function() {

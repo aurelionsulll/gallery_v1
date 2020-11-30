@@ -5,7 +5,7 @@
                 <div class="card-body">
                     <div class="d-md-flex align-items-center">
                         <div>
-                            <h4 class="card-title">Gallery</h4>
+                            <h4 class="card-title"><span style="color: red">Folder name</span></h4>
                         </div>
                         <div class="ml-auto">
                             <div class="dl">
@@ -159,7 +159,11 @@
                                 </div>
                             </div>
                             <div v-if="slider.category ==1">
-
+                                <a>
+                                    <i class="fas fa-folder shadoww" style="font-size: 100px" :style="' color:' + slider.color "></i>
+                                    <br>
+                                    <p style="font-size: 16px" :style="' color:' + slider.color ">{{slider.path}}</p>
+                                </a>
                             </div>
                         </div>
                     </div>

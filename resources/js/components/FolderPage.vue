@@ -98,7 +98,7 @@
                             </a>
 
                             <div class="dropdown dropleft settings" style=" margin-top: -76px; margin-left: -2; margin-left: -80px;">
-                                <a class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-cog " style="color : white ; font-size: 20px" ></i>                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" :href="'/folderImage/'+ slider.id" target="_blank">
